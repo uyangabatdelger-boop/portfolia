@@ -1,16 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
-</head>
-<body>
-    <h1>Uyanga's Portfolio</h1>
-    <p>Welcome to my portfolio website.</p>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <h2>Projects</h2>
-    <ul>
-        <li>Project 1</li>
-        <li>Project 2</li>
-    </ul>
+  <title>Uyanga — IT Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0a0f24;
+      color: #eaf0f6;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f293d, #10213a);
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #9bb7d4;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .about {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .about p {
+      font-size: 1.1rem;
+      color: #cbd5e1;
+    }
+
+    .projects {
+      display: grid;
+      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .card {
+      background: linear-gradient(145deg, #12243f, #0c1e30);
+      border-radius: 12px;
+      padding: 20px;
+      transition: .4s ease;
+      box-shadow: 4px 4px 12px rgba(0,0,0,0.4),
+                  -4px -4px 12px rgba(255,255,255,0.05);
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 6px 6px 18px rgba(0,0,0,0.5),
+                  -6px -6px 18px rgba(255,255,255,0.07);
+    }
+    .card h3 {
+      color: #61dafb;
+      font-size: 1.4rem;
+      margin-bottom: 8px;
+    }
+    .card p {
+      font-size: .95rem;
+      color: #d1d9e2;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px 10px;
+      margin-top: 60px;
+      background: #0f2236;
+      color: #8899b0;
+    }
+    footer p {
+      font-size: .9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Uyanga Batdelger</h1>
+  <p>Software Developer | IT Enthusiast</p>
+</header>
+
+<section class="container about">
+  <h2>About Me</h2>
+  <p>Hello! I’m a passionate IT student & developer. I build web apps, explore tech, and solve problems.</p>
+</section>
+
+<section class="container">
+  <h2>Featured Projects</h2>
+  <div class="projects">
+
+    <div class="card">
+      <h3>Project #1</h3>
+      <p>Web application built with modern JS and responsive layout.</p>
+    </div>
+
+    <div class="card">
+      <h3>Project #2</h3>
+      <p>API integration project for real-time data sync.</p>
+    </div>
+
+    <div class="card">
+      <h3>Project #3</h3>
+      <p>Mobile-friendly UI for dashboard and charts.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Uyanga — Crafted with passion in technology</p>
+</footer>
+
 </body>
 </html>
